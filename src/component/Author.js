@@ -27,7 +27,7 @@ const Author = (props) => {
           </button>
         </Link>
       </div>
-      <div className="author name">{filterData[0].author}</div>
+      <div className="author name">{filterData.length === 0 ? "" : filterData[0].author}</div>
       <div className="txt cons">
         {filterData.map((element, index) => (
           <div key={index}>{element.content}</div>
